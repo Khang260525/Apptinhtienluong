@@ -543,7 +543,10 @@
             // PWA: Đăng ký Service Worker
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', () => {
-                    navigator.serviceWorker.register('./service-worker.js')
+                    // ... (trong thẻ <script> ở cuối index.html)
+        navigator.serviceWorker.register('/Apptinhtienluong/service-worker.js')
+// ...
+
                         .then(reg => console.log('Service Worker đã được đăng ký thành công:', reg.scope))
                         .catch(err => console.log('Đăng ký Service Worker thất bại:', err));
                 });
@@ -552,3 +555,21 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
